@@ -163,6 +163,15 @@ var getRandomArbitrary = function () {
 */
 
 //Code Here
+function finder(arr){
+  var random = getRandomArbitrary();
+  for(var i = 0; i < arr.length; i++){
+    if(arr[i] === random) {
+      return true;
+    }
+  }
+  return false;
+}
 
 
 
