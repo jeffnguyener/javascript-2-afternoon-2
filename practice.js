@@ -251,15 +251,13 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
 //Code Here
 
-function addTen(arr) {
+function addTen(numbers) {
   var output = [];
-  for (let i = 0; i < arr.length; i++) {
-    let num = numbers(arr[i]);
-    output.push(num + 10);
+  for (let i = 0; i < numbers.length; i++) {
+    output.push(+numbers[i] + 10);
   }
   return output;
 }
-
 ////////// PROBLEM 11 //////////
 
 // Do not edit the code below.
@@ -283,7 +281,11 @@ for (var i = 0; i < num2; i++) {
 
 //Code Here
 function longer(arr1, arr2) {
-  return arr1.length > arr2.length ? arr1 : arr2
+  if (arr1.length > arr2.length) {
+    return arr1;
+  } else {
+    return arr2;
+  }
 }
 
 
