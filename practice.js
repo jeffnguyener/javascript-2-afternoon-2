@@ -202,6 +202,24 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
+function removeItem(myGroceryList, item) {
+  if(!myGroceryList && item){
+    for(let i = 0; i < myGroceryList.length; i++) {
+     if(myGroceryList [i] === item);
+        myGroceryList.splice(i, 1);
+       return myGroceryList;
+    }
+  }
+  return [];
+}
+function addItem(myGroceryList, item) {
+  if(item && myGroceryList) {
+    myGroceryList.push(item);
+    return myGroceryList;
+  
+  } 
+  return [];
+}
 
 
 ////////// PROBLEM 9 //////////
@@ -212,7 +230,12 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-
+function maker() {
+  let arr = [];
+  for(let i = 1; i < 216; i++) {
+    return arr;
+  }
+}
 
 ////////// PROBLEM 10 //////////
 
@@ -228,7 +251,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
 //Code Here
 
-
+function addTen(arr) {
+  
+}
 
 ////////// PROBLEM 11 //////////
 
