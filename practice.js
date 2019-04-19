@@ -203,7 +203,7 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Code Here
 
 function removeItem(myGroceryList, item) {
-  if (!myGroceryList && item) {
+  if (myGroceryList && item) {
     for (let i = 0; i < myGroceryList.length; i++) {
       if (myGroceryList[i] === item);
       myGroceryList.splice(i, 1);
@@ -232,8 +232,9 @@ function addItem(myGroceryList, item) {
 function maker() {
   let arr = [];
   for (let i = 1; i < 216; i++) {
-    return arr;
+    arr.push(i);
   }
+  return arr;
 }
 
 ////////// PROBLEM 10 //////////
