@@ -133,15 +133,15 @@ function divider(numbersArray) {
   var evensArray = [];
   var oddsArray = [];
   var output = [];
-    for (var i = 0; i < numbersArray.length; i++) {
-      if (numbersArray[i] % 2 === 0) {
-        evensArray.push(numbersArray[i]);
-      } else {
-        oddsArray.push(numbersArray[i]);
-      }
+  for (var i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] % 2 === 0) {
+      evensArray.push(numbersArray[i]);
+    } else {
+      oddsArray.push(numbersArray[i]);
     }
-    output.push(evensArray, oddsArray);
-    return output;
+  }
+  output.push(evensArray, oddsArray);
+  return output;
 }
 
 ////////// PROBLEM 7 //////////
@@ -163,10 +163,10 @@ var getRandomArbitrary = function () {
 */
 
 //Code Here
-function finder(arr){
+function finder(arr) {
   var random = getRandomArbitrary();
-  for(var i = 0; i < arr.length; i++){
-    if(arr[i] === random) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === random) {
       return true;
     }
   }
@@ -203,22 +203,20 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Code Here
 
 function removeItem(myGroceryList, item) {
-  if(!myGroceryList && item){
-    for(let i = 0; i < myGroceryList.length; i++) {
-     if(myGroceryList [i] === item);
-        myGroceryList.splice(i, 1);
-       return myGroceryList;
+  if (!myGroceryList && item) {
+    for (let i = 0; i < myGroceryList.length; i++) {
+      if (myGroceryList[i] === item);
+      myGroceryList.splice(i, 1);
+      return myGroceryList;
     }
-  }
-
-  return [];
+  } return [];
 }
 function addItem(myGroceryList, item) {
-  if(item && myGroceryList) {
+  if (item && myGroceryList) {
     myGroceryList.push(item);
     return myGroceryList;
-  
-  } 
+
+  }
   return [];
 }
 
@@ -233,7 +231,7 @@ function addItem(myGroceryList, item) {
 
 function maker() {
   let arr = [];
-  for(let i = 1; i < 216; i++) {
+  for (let i = 1; i < 216; i++) {
     return arr;
   }
 }
@@ -254,7 +252,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 
 function addTen(arr) {
   var output = [];
-  for(let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     let num = numbers(arr[i]);
     output.push(num + 10);
   }
@@ -298,7 +296,16 @@ function longer(arr1, arr2) {
 
 //Code Here
 
-
+function both(arr1, arr2) {
+  var newArr = [];
+  for (let i = 0; i < arr1.length; i++); {
+    for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
+        newArr.push(arr1[i]);
+      }
+    }
+  } return newArr;
+}
 
 ////////// PROBLEM 12 //////////
 
@@ -337,7 +344,11 @@ var colt = {
 */
 
 //Code Here
-
+for (let i = 0; i < devMountainEmployees.length; i++) {
+  if (devMountainEmployees[i].name === 'Cahlan') [
+    devMountainEmployees.splice()
+  ]
+}
 
 
 /*
