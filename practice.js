@@ -348,8 +348,8 @@ var colt = {
 */
 
 //Code Here
-console.log(devMountainEmployees === 4)
-
+devMountainEmployees.push(joe, cahlan, ryan, colt);
+console.log(devMountainEmployees.length)
 
 /*
   Now let's say Cahlan has to take a leave of absence.
@@ -359,7 +359,7 @@ console.log(devMountainEmployees === 4)
 //Code Here
 for (let i = 0; i < devMountainEmployees.length; i++) {
   if (devMountainEmployees[i].name === 'Cahlan') {
-    devMountainEmployees.splice()
+    devMountainEmployees.splice(i, 1);
   }
 }
 
@@ -373,7 +373,7 @@ for (let i = 0; i < devMountainEmployees.length; i++) {
 */
 
 //Code Here
-
+let users = [arr];
 
 
 /*
@@ -392,7 +392,7 @@ var user1 = {
 // Do not edit the code above.
 
 //Code Here
-
+users.add(user1);
 
 
 /*
@@ -406,7 +406,11 @@ var user1 = {
 */
 
 //Code Here
-
+for (let i = 0; i < user1.length; i++) {
+  if (user1[i].email === 'mark.mciver@devmounta.in') {
+    user1.splice(i, 1);
+  }
+}
 
 
 /*
