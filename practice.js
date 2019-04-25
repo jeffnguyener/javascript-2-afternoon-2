@@ -301,13 +301,14 @@ function longer(arr1, arr2) {
 
 function both(arr1, arr2) {
   var newArr = [];
-  for (let i = 0; i < arr1.length; i++); {
+  for (let i = 0; i < arr1.length; i++) {
     for (let j = 0; j < arr2.length; j++) {
       if (arr1[i] === arr2[j]) {
         newArr.push(arr1[i]);
       }
     }
-  } return newArr;
+  }
+  return newArr;
 }
 
 ////////// PROBLEM 12 //////////
@@ -347,11 +348,7 @@ var colt = {
 */
 
 //Code Here
-for (let i = 0; i < devMountainEmployees.length; i++) {
-  if (devMountainEmployees[i].name === 'Cahlan') [
-    devMountainEmployees.splice()
-  ]
-}
+console.log(devMountainEmployees === 4)
 
 
 /*
@@ -360,7 +357,11 @@ for (let i = 0; i < devMountainEmployees.length; i++) {
 */
 
 //Code Here
-
+for (let i = 0; i < devMountainEmployees.length; i++) {
+  if (devMountainEmployees[i].name === 'Cahlan') {
+    devMountainEmployees.splice()
+  }
+}
 
 
 ////////// PROBLEM 13 //////////
